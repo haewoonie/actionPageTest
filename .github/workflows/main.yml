@@ -15,9 +15,9 @@ jobs:
         with:
           persist-credentials: false
       - name: Setup node
-       uses: actions/setup-node@v3
-       with:
-         node-version: 16 # 指定node版本
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16 # 指定node版本
       - name: Build
         run: |
           npm install 
