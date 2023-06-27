@@ -1,11 +1,11 @@
 name: CI
- on:
+on:
    push:
      branches:
        - main
 
  # 任务
- jobs:
+jobs:
    build-and-deploy:
      # 服务器环境：最新版 Ubuntu
      runs-on: ubuntu-latest
