@@ -10,22 +10,18 @@ jobs:
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
     steps:
-      # 拉取代码
       - name: Checkout
         uses: actions/checkout@v2
         with:
           persist-credentials: false
-      # 安装node
       - name: Setup node
        uses: actions/setup-node@v3
        with:
          node-version: 16 # 指定node版本
-      # 生成静态文件
       - name: Build
         run: |
-          npm install  # 安装依赖
-          npm run docs:build  # 执行打包
-       # 部署到 GitHub Pages
+          npm install 
+          npm run docs:build  
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
