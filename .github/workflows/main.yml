@@ -16,7 +16,7 @@ jobs:
          with:
            persist-credentials: false
       # 安装node
-      - name: Setup node
+       - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: 16 # 指定node版本
