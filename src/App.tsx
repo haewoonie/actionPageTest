@@ -1,10 +1,11 @@
 import React from 'react';
+import MyRouter from './router';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        action page test
+        <MyRouter/>
       </header>
     </div>
   );
