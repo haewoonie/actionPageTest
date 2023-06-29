@@ -12,7 +12,7 @@ function  SecondModal(props:any){
             setOpen(isOpen)
             // setOpen(true)
         }
-    },[open])
+    },[open,isOpen,isActivate])
     
 
     return(
