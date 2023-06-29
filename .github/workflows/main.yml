@@ -24,6 +24,6 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # 也就是我们刚才生成的 secret
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} 
           BRANCH: prod
-          FOLDER: docs-dist # 生成的静态文件存放的地方
+          FOLDER: build
