@@ -6,9 +6,7 @@ import { Card, Image } from "antd";
 const HeaderUserInfo = () => {
 
     const [userInfo, setUserInfo] = useState<UserInfo>({ userIcon: "", userName: "mock" })
-
-    const image=
-
+    
     useEffect(() => {
 
     }, [])
