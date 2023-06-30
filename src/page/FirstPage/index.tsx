@@ -1,6 +1,7 @@
 import SecondModal from "../SecondModal";
 import { useState } from "react";
 import { Button } from "antd";
+import HeaderUserInfo from "../../component/HeaderUserInfo";
 
 function FirstPage(){
     // const url=window.location.href
@@ -14,12 +15,7 @@ function FirstPage(){
 
     return (
         <>
-        first page
-        <Button onClick={onClick}></Button>
-        <SecondModal 
-        isActivate={true}
-        isOpen={isTrue}
-        message={"dddd"} />
+        <HeaderUserInfo/>
         </>
     )
 }
