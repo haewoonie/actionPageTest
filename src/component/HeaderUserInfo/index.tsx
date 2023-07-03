@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
-import { UserInfo } from "../../utils/model";
+import { useEffect } from "react";
 import Sider from "antd/es/layout/Sider";
-import { Card, Image } from "antd";
+import { Avatar, Card, Divider } from "antd";
 
 const HeaderUserInfo = () => {
 
@@ -11,14 +10,24 @@ const HeaderUserInfo = () => {
 
     }, [])
 
-    
+
 
     return (
         <>
             <div className="user-icon">
-                <Sider>
+                <Sider style={{ height: "98vh" }}>
                     <Card bordered={false}>
-                        <Image src="%PUBLIC_URL%/avatarMock.jpg"></Image>
+                        <Avatar ></Avatar>
+                        <div style={{ justifyContent: "center" }}>
+                            <h5>User Name</h5>
+                            <h6>User ID</h6>
+                            <div>Self Introduction</div>
+                            <div style={{ marginTop: "10px" }}>
+                                <a href="/">Mock1</a>
+                                <Divider type="vertical"></Divider>
+                                <a href="/">Mock2</a>
+                            </div>
+                        </div>
                     </Card>
 
                 </Sider>
